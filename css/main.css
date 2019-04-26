@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+body {
+  font-family: Ubuntu;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+}
+
+nav .mainNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+}
+
+.titleWrapper {
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.titleWrapper .greenMain {
+  position: relative;
+  background-color: #339989;
+  height: 60%;
+  width: 100%;
+  border-radius: 0 0 0 75px;
+}
+
+.titleWrapper .greenMain h1 {
+  position: relative;
+  display: inline-block;
+  font-size: 48px;
+}
+
+.titleWrapper .greenMain .staticTitle {
+  -webkit-transform: translate(60%, -120%);
+          transform: translate(60%, -120%);
+  color: #339989;
+}
+
+.titleWrapper .greenMain .dynamicTitle {
+  -webkit-transform: translate(0px, 20%);
+          transform: translate(0px, 20%);
+  color: #fffafb;
+}
+
+.spaceWrapper {
+  height: 350px;
+  position: relative;
+}
+
+.projectsWrapper {
+  position: absolute;
+  top: -50%;
+  height: 150%;
+  width: 100%;
+  border: 5px dotted green;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.projectsWrapper .projectTitle {
+  font-size: 48px;
+  color: #7de2d1;
+  margin-bottom: 50px;
+}
+
+.projectsWrapper .imagesWrapper {
+  border: 1px solid red;
+  height: 400px;
+}
+/*# sourceMappingURL=main.css.map */
