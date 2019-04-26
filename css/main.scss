@@ -1,74 +1,85 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
-$green:#339989;
-$lightGreen:#7de2d1;
-$white:#fffafb;
+$green: #339989;
+$lightGreen: #7de2d1;
+$white: #fffafb;
 $black: #131515;
-$gray:#2b2c28;
+$gray: #2b2c28;
 
-body{
-    font-family:Ubuntu;
+body {
+  font-family: Ubuntu;
 }
-nav{
-    display:flex;
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+
+  .mainNav {
+    display: flex;
     justify-content: space-between;
-    padding:15px;
-
-    .mainNav{
-        display:flex;
-        justify-content:space-between;
-        width:40%;
-    }
+    width: 40%;
+  }
 }
 
-.titleWrapper{
-    height:450px;
-    display:flex;
-    align-items: flex-end;
-    position:relative;
+.titleWrapper {
+  height: 450px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
 
-    .greenMain{
-        position:relative;
-        background-color: $green;
-        height:60%;
-        width:100%;
-        border-radius: 0 0 0 75px;
-        h1{
-            position: relative;
-            display:inline-block;
-            font-size: 48px;
-        }
-        .staticTitle{
-            transform:translate(60%, -120%);
-            color:$green;     
-        }
-        .dynamicTitle{
-           transform:translate(0px, 20%);
-           color:$white;
-        }
-    }
-}
-.spaceWrapper{
-    height:350px;
-    // border:5px solid blue;
+  .greenMain {
     position: relative;
-    // transform:translateY(-150px)
+    background-color: $green;
+    height: 60%;
+    width: 100%;
+    border-radius: 0 0 0 75px;
+    h1 {
+      position: relative;
+      display: inline-block;
+      font-size: 48px;
+    }
+    .staticTitle {
+      transform: translate(60%, -120%);
+      color: $green;
+    }
+    .dynamicTitle {
+      transform: translate(0px, 20%);
+      color: $white;
+    }
+  }
 }
-.projectsWrapper{
-    position:absolute;
-    top:-50%;
-    height:150%;
-    width:100%;
-    border:5px dotted green;
-    text-align:center;
-    padding:0 40px;
-    .projectTitle{
-        font-size:48px;
-        color:$lightGreen;
-        margin-bottom:50px;
+
+.projectsWrapper {
+  text-align: center;
+  padding: 0 40px;
+  .projectTitle {
+    font-size: 48px;
+    color: $lightGreen;
+    margin-bottom: 50px;
+  }
+  .imagesWrapper {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .projWrap {
+      height: 25%;
+      width: 49%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+
+      .imgWrapper {
+        height: 100%;
+        width: auto;
+
+        img {
+          width: 100%;
+          height: auto;
+          border: 1px solid black;
+        }
+      }
     }
-    .imagesWrapper{
-        border:1px solid red;
-        height:400px;
-    }
+  }
 }
