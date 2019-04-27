@@ -22,17 +22,21 @@ nav {
 }
 
 .titleWrapper {
-  height: 450px;
-  display: flex;
-  align-items: flex-end;
+  height: auto;
+//   display: flex;
+//   align-items: flex-end;
   position: relative;
+//   border: 1px solid red;
 
   .greenMain {
     position: relative;
     background-color: $green;
-    height: 60%;
+    height: 60vh;
+    top:40vh;
     width: 100%;
     border-radius: 0 0 0 75px;
+
+
     h1 {
       position: relative;
       display: inline-block;
@@ -50,13 +54,17 @@ nav {
 }
 
 .projectsWrapper {
-  text-align: center;
-  padding: 0 40px;
+    position: relative;
+    text-align: center;
+    padding: 20px 40px;
+    // transform: translateY(50px);
+
   .projectTitle {
     font-size: 48px;
     color: $lightGreen;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
+
   .imagesWrapper {
     height: 100%;
     display: flex;
@@ -77,7 +85,7 @@ nav {
         img {
           width: 100%;
           height: auto;
-          border: 1px solid black;
+          border: 1px solid $black;
         }
       }
     }

@@ -24,20 +24,15 @@ nav .mainNav {
 }
 
 .titleWrapper {
-  height: 450px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  height: auto;
   position: relative;
 }
 
 .titleWrapper .greenMain {
   position: relative;
   background-color: #339989;
-  height: 60%;
+  height: 60vh;
+  top: 40vh;
   width: 100%;
   border-radius: 0 0 0 75px;
 }
@@ -61,14 +56,15 @@ nav .mainNav {
 }
 
 .projectsWrapper {
+  position: relative;
   text-align: center;
-  padding: 0 40px;
+  padding: 20px 40px;
 }
 
 .projectsWrapper .projectTitle {
   font-size: 48px;
   color: #7de2d1;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .projectsWrapper .imagesWrapper {
@@ -104,6 +100,6 @@ nav .mainNav {
 .projectsWrapper .imagesWrapper .projWrap .imgWrapper img {
   width: 100%;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid #131515;
 }
 /*# sourceMappingURL=main.css.map */
