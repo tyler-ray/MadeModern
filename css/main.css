@@ -100,6 +100,63 @@ nav .mainNav {
 .projectsWrapper .imagesWrapper .projWrap .imgWrapper img {
   width: 100%;
   height: auto;
+  padding: 0.1px;
   border: 1px solid #131515;
+}
+
+.projectsWrapper .imagesWrapper .projWrap h2 {
+  font-size: 18px;
+}
+
+.mainSkillsWrap {
+  width: 100%;
+  height: auto;
+}
+
+.mainSkillsWrap .barsWrap {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -5;
+}
+
+.mainSkillsWrap .barsWrap .bar {
+  width: 100%;
+  height: 15px;
+  background-color: #7de2d1;
+}
+
+.mainSkillsWrap .skillsWrap {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.mainSkillsWrap .skillsWrap h1 {
+  font-size: 48px;
+  color: #2b2c28;
+}
+
+.mainSkillsWrap .skillsWrap .mySkillsWrap {
+  padding: none;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.mainSkillsWrap .skillsWrap .mySkillsWrap .skillWrap {
+  height: auto;
+  margin: 15px;
+}
+
+.mainSkillsWrap .skillsWrap .mySkillsWrap .skillWrap img {
+  width: 100%;
+}
+
+.mainSkillsWrap .skillsWrap .mySkillsWrap .skillWrap h2 {
+  margin: 5px 0px;
+  font-size: 15px;
+  color: #131515;
 }
 /*# sourceMappingURL=main.css.map */
