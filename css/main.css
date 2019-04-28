@@ -40,15 +40,21 @@ h1 {
 }
 
 .titleWrapper .greenMain .staticTitle {
-  -webkit-transform: translate(-15%, -120%);
-          transform: translate(-15%, -120%);
+  -webkit-transform: translate(-120px, -120%);
+          transform: translate(-120px, -120%);
+  opacity: 0;
   color: #131515;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .titleWrapper .greenMain .dynamicTitle {
-  -webkit-transform: translate(5%, -80%);
-          transform: translate(5%, -80%);
+  -webkit-transform: translate(10%, 50px);
+          transform: translate(10%, 50px);
+  opacity: 0;
   color: #fffafb;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .projectsWrapper {
@@ -242,5 +248,19 @@ footer .footer1 {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.slideIn {
+  -webkit-transform: translate(-20%, -120%);
+          transform: translate(-20%, -120%);
+  opacity: 1;
+  z-index: 5;
+}
+
+.slideUp {
+  -webkit-transform: translate(10%, -80%);
+          transform: translate(10%, -80%);
+  opacity: 1;
+  z-index: 5;
 }
 /*# sourceMappingURL=main.css.map */

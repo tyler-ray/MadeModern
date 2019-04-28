@@ -60,21 +60,19 @@ h1 {
 
   
     .staticTitle {
-      transform: translate(-15%, -120%);
+      transform: translate(-120px, -120%);
+      opacity:0;
       color: $black;
+      transition:1s;
     }
     .dynamicTitle {
-      transform: translate(5%, -80%);
+      transform: translate(10%, 50px);
+      opacity:0;
       color: $white;
+      transition:1s;
     }
   }
 }
-
-
-
-
-
-
 
 .projectsWrapper {
   position: relative;
@@ -252,3 +250,15 @@ footer {
     justify-content:space-around;
   }
 }
+
+
+.slideIn{
+      transform: translate(-20%, -120%);
+      opacity:1;
+      z-index: 5
+    }
+    .slideUp {
+      transform: translate(10%, -80%);
+      opacity:1;
+      z-index: 5;
+    }
