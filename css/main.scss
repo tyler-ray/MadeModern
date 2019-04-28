@@ -8,9 +8,18 @@ $gray: #2b2c28;
 
 $titleSize:48px;
 
+html{
+  // border:10px dotted darkblue;
+  // width:80%;
+  height:auto;
+  // overflow:hidden;
+}
 body {
   font-family: Ubuntu;
   background-color: $white;
+  // border:10px solid #000;
+  height:auto;
+  // width:80%;
 }
 
 nav {
@@ -28,35 +37,52 @@ h1 {
   font-size: 40px;
 }
 
+
+.mainWrapper{
+  // border:5px solid pink;
+  // width:80%;
+}
+
 .titleWrapper {
   height: auto;
   position: relative;
   text-align: center;
+  // border:5px solid red;
+  // width:80%;
  
   .greenMain {
     position: relative;
     background-color: $green;
-    height: 60vh;
-    top: 40vh;
+    height: 70vh;
+    top: 45vh;
     width: 100%;
     border-radius: 0 0 0 75px;
 
   
     .staticTitle {
-    //   transform: translate(60%, -120%);
+      transform: translate(-15%, -120%);
       color: $black;
     }
     .dynamicTitle {
-    //   transform: translate(0px, 20%);
+      transform: translate(5%, -80%);
       color: $white;
     }
   }
 }
 
+
+
+
+
+
+
 .projectsWrapper {
   position: relative;
   text-align: center;
-  padding: 20px 40px;
+  padding: 0px 30px;
+  // border:5px solid blue;
+  width:100%;
+
 
   .projectTitle {
     font-size: 48px;
@@ -65,14 +91,15 @@ h1 {
   }
 
   .imagesWrapper {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1;
+    // grid-template-rows: repeat(5, 1fr);
+    // border:1px solid red;
 
     .projWrap {
-      height: 25%;
-      width: 49%;
+      height: auto;
+      width: 100%;
       display: flex;
       flex-direction: column;
       margin-bottom: 15px;
@@ -95,9 +122,10 @@ h1 {
   }
 }
 .mainSkillsWrap {
-  width: 100%;
+  // width: 80%;
   height: auto;
-  // border:10px solid;
+  // border:5px solid purple;
+  position:relative;
 
   .barsWrap {
     width: 100%;
@@ -120,15 +148,15 @@ h1 {
       color: $gray;
     }
     .mySkillsWrap {
-      padding: none;
+      // padding: none;
       width: 100%;
       // border:1px solid red7+;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, .9fr);
       .skillWrap {
         // width:50px;
         height: auto;
-        margin: 15px;
+        margin: 10px;
         // border:1px solid blue;
         img {
           // height:100%;
@@ -145,14 +173,13 @@ h1 {
 }
 .aboutMeWrapper {
   height: auto;
-  width: 80%;
-  // border:10px solid red;
+  // width: 80%;
   padding: 20px;
+  // border:5px solid yellow;
+
   .aboutTitle {
     font-size: 48px;
     text-align: center;
-    // border:1px dotted blue;
-    // display:inline-block;
     width: auto;
     margin-bottom: 30px;
 
@@ -162,57 +189,66 @@ h1 {
       padding: 10px 20px;
       border-radius: 50px;
       border: 10px solid $lightGreen;
-
-      // margin-bottom:30px;
     }
   }
   .LRwrapper {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
     div {
-      // width:40%;
       padding: 20px;
       margin: 10px;
       border: 10px solid $lightGreen;
       border-radius: 50px;
       background-color: $white p {
-        font-size: 20px;
+      font-size: 20px;
       }
     }
   }
 }
 .picturesWrapper {
+  // border:5px solid orange;
   height: 400px;
-  width: 100%;
-  // border:20px solid $green;
+  // width: 80%;
 }
 .socialWrapper {
+  // border:5px solid $green;
+  text-align: center;
   height: auto;
   padding: 20px 0;
-  width: 100%;
-  // border:20px solid $lightGreen;
+  // width: 80%;
+
   h1 {
     font-size: 48px;
     color: $black;
     text-align: center;
   }
+
   .linksWrap {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    // border:1px solid red;
+    // display: grid;
+    // grid-template-columns: repeat(5, 1fr);
+    display:flex;
+    flex-wrap:wrap;
     padding: 20px;
+    justify-content:space-around;
+
     img {
-      width: 100%;
-      // margin:20px;
-      padding: 5px;
+      width: 30%;
+      // padding: 5px;
     }
   }
 }
 footer {
-  width: 100%;
+  // width: 80%;
   height: 200px;
+  padding:10px;
   border-top: 20px solid $green;
   background-color: $lightGreen;
   display: flex;
   justify-content: space-around;
+  align-items:center;
+ 
+  .footer1{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+  }
 }

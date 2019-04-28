@@ -35,12 +35,13 @@
   -moz-user-select: none;
   user-select: none;
   cursor: pointer;
-  height: 2rem;
+  height: 1.5rem;
   left: 2rem;
   position: fixed;
   top: 2rem;
-  width: 3rem;
+  width: 2rem;
   z-index: 2;
+  /* border:1px solid red; */
 }
 
 .nav-toggle:hover { opacity: 0.8; }
@@ -58,15 +59,15 @@
   transition: all 0.5s ease;
   background: #131515;
   content: '';
-  height: 0.4rem;
+  height: 0.2rem;
   width: 100%;
 }
 
 .nav-toggle .nav-toggle-bar { margin-top: 0; }
 
-.nav-toggle .nav-toggle-bar::after { margin-top: 0.8rem; }
+.nav-toggle .nav-toggle-bar::after { margin-top: 0.6rem; }
 
-.nav-toggle .nav-toggle-bar::before { margin-top: -0.8rem; }
+.nav-toggle .nav-toggle-bar::before { margin-top: -0.6rem; }
 
 .nav-toggle.expanded .nav-toggle-bar { background: transparent; }
 

@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
+html {
+  height: auto;
+}
+
 body {
   font-family: Ubuntu;
   background-color: #fffafb;
+  height: auto;
 }
 
 nav li {
@@ -28,24 +33,29 @@ h1 {
 .titleWrapper .greenMain {
   position: relative;
   background-color: #339989;
-  height: 60vh;
-  top: 40vh;
+  height: 70vh;
+  top: 45vh;
   width: 100%;
   border-radius: 0 0 0 75px;
 }
 
 .titleWrapper .greenMain .staticTitle {
+  -webkit-transform: translate(-15%, -120%);
+          transform: translate(-15%, -120%);
   color: #131515;
 }
 
 .titleWrapper .greenMain .dynamicTitle {
+  -webkit-transform: translate(5%, -80%);
+          transform: translate(5%, -80%);
   color: #fffafb;
 }
 
 .projectsWrapper {
   position: relative;
   text-align: center;
-  padding: 20px 40px;
+  padding: 0px 30px;
+  width: 100%;
 }
 
 .projectsWrapper .projectTitle {
@@ -55,20 +65,16 @@ h1 {
 }
 
 .projectsWrapper .imagesWrapper {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
 }
 
 .projectsWrapper .imagesWrapper .projWrap {
-  height: 25%;
-  width: 49%;
+  height: auto;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,8 +102,8 @@ h1 {
 }
 
 .mainSkillsWrap {
-  width: 100%;
   height: auto;
+  position: relative;
 }
 
 .mainSkillsWrap .barsWrap {
@@ -124,17 +130,16 @@ h1 {
 }
 
 .mainSkillsWrap .skillsWrap .mySkillsWrap {
-  padding: none;
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (0.9fr)[2];
+      grid-template-columns: repeat(2, 0.9fr);
 }
 
 .mainSkillsWrap .skillsWrap .mySkillsWrap .skillWrap {
   height: auto;
-  margin: 15px;
+  margin: 10px;
 }
 
 .mainSkillsWrap .skillsWrap .mySkillsWrap .skillWrap img {
@@ -149,7 +154,6 @@ h1 {
 
 .aboutMeWrapper {
   height: auto;
-  width: 80%;
   padding: 20px;
 }
 
@@ -169,11 +173,8 @@ h1 {
 }
 
 .aboutMeWrapper .LRwrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -ms-grid;
+  display: grid;
 }
 
 .aboutMeWrapper .LRwrapper div {
@@ -187,13 +188,12 @@ h1 {
 
 .picturesWrapper {
   height: 400px;
-  width: 100%;
 }
 
 .socialWrapper {
+  text-align: center;
   height: auto;
   padding: 20px 0;
-  width: 100%;
 }
 
 .socialWrapper h1 {
@@ -203,26 +203,43 @@ h1 {
 }
 
 .socialWrapper .linksWrap {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[9];
-      grid-template-columns: repeat(9, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .socialWrapper .linksWrap img {
-  width: 100%;
-  padding: 5px;
+  width: 30%;
 }
 
 footer {
-  width: 100%;
   height: 200px;
+  padding: 10px;
   border-top: 20px solid #339989;
   background-color: #7de2d1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
